@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personality Quiz Recommendation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🧠 Personality Quiz</h1>
+  <p>Answer a few questions to get recommendations</p>
+
+  <form id="quizForm">
+
+    <div class="question">
+      <p>1. How do you handle challenges?</p>
+      <label><input type="radio" name="q1" value="brave"> Face them boldly</label>
+      <label><input type="radio" name="q1" value="wise"> Think and plan</label>
+    </div>
+
+    <div class="question">
+      <p>2. What matters most to you?</p>
+      <label><input type="radio" name="q2" value="loyal"> Family & friends</label>
+      <label><input type="radio" name="q2" value="chill"> Peace & happiness</label>
+    </div>
+
+    <div class="question">
+      <p>3. Your free time preference?</p>
+      <label><input type="radio" name="q3" value="brave"> Action & adventure</label>
+      <label><input type="radio" name="q3" value="chill"> Relaxing content</label>
+    </div>
+
+    <button type="button" onclick="calculateResult()">Get Recommendation</button>
+  </form>
+
+  <div id="result" class="result-box"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
